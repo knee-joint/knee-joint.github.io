@@ -1,0 +1,343 @@
+*
+    box-sizing: border-box
+    user-select: none
+body
+    --main-color: black
+    --primary-color: white
+    background-color: var(--main-color)
+    padding: 0px
+    margin: 0px
+section
+    &.nft_preview
+        position: absolute
+        // margin: 0 auto
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        // transform: translateY(-50%)
+        width: auto
+        overflow: hidden
+        div.menu
+            display: block
+            position: absolute
+            width: 85%
+            bottom: -100%
+            overflow: hidden
+            height: 30%
+            border-radius: 27px
+            border: 3px solid var(--primary-color)
+            border-bottom: 0px
+            left: 50%
+            background-color: rgba(0, 0, 0, 0.7)
+            transform: translateX(-50%)
+            transition-property: bottom
+            transition-duration: 0.7s
+            transition-timing-function: ease
+            &_show
+                bottom: -10%
+            button
+                border: none
+                top: 15%
+                width: 35%
+                height: 35%
+                opacity: 1
+                transition-property: opacity
+                transition-duration: 1s
+                transition-timing-function: ease
+                &.back_to_telegram
+                    position: absolute
+                    z-index: 30
+                    left: 6%
+
+                    background: url("../imgs/main_imgs/back_to_telegram_button.png") center center/contain no-repeat
+
+                &.settings
+                    position: absolute
+                    z-index: 30
+                    right: 6%
+                    background: url("../imgs/main_imgs/settings_button.png") center center/contain no-repeat
+
+                &:hover
+                    opacity: 1
+    width: 600px
+    position: relative
+    left: 50%    
+    transform: translateX(-50%)
+    &.top_preview
+        height: 230px
+        max-width: 600px
+        max-height: 230px
+        margin-top: -5%
+        .top_preview_container
+            position: absolute
+            width: 65%
+            height: 37%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            img.slider_decorator
+                position: absolute
+                width: 100%
+                height: 186%
+                top: 48%
+                transform: translateY(-50%)
+                z-index: -2
+            div
+                &.slider
+                    position: relative
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    border-top: 2px solid var(--primary-color)
+                    border-bottom: 2px solid var(--primary-color)
+                    background-color: var(--main-color)
+                    z-index: -1
+                    .slider__inner
+                        height: 100%
+                        width: 100%
+                        transition: 1s transform
+                        // margin-left: -2px
+                        div
+                            &.hero
+                                display: inline-block
+                                position: absolute
+                                width: 20%
+                                height: 100%
+                                transition: 0.5s transform
+                                border-right: 3px solid var(--primary-color)
+                                // background: url("../imgs/heroes/zonk.svg") center (center/cover) no-repeat
+                                // float: left
+                                // clear: none
+                                // &:nth-child(10)
+                                    // border-right: none
+                                    // margin-left: 0%
+                                // &:last-child
+                                //     border-right: none
+                                img
+                                    height: 100%
+                                    width: 100%
+            .buttons
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0%
+                z-index: -10
+                button
+                    position: absolute
+                    border: none
+                    height: 100%
+                    width: 13%
+                    z-index: -10
+                    transition-property: opacity
+                    transition-duration: 1s
+                    transition-timing-function: ease
+                    
+                    top: 50%
+                    transform: translateY(-50%)
+                    height: 102.5%
+
+                    &.left_button
+                        left: -11.2%
+                        background: url("../imgs/main_imgs/top_preview_left.png") center center/contain no-repeat
+                    &.right_button
+                        right: -11.2%
+                        background: url("../imgs/main_imgs/top_preview_right.png") center center/contain no-repeat
+
+    &.main_preview
+        position: relative
+        height: 600px
+        width: 600px
+        max-height: 600px
+        max-width: 600px
+        div
+            &.main_preview_container
+                position: absolute
+                margin-top: -11%
+                width: 100%
+                height: 100%
+                left: 50%
+                transform: translateX(-50%)
+                .buttons
+                    position: absolute
+                    height: 50%
+                    width: 75%
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%) scale(1.2, 1.4)
+                    .left_arrow, .right_arrow
+                        top: 47%
+                        transform: translateY(-50%)
+                        height: 80%
+                        width: 13%
+                        position: absolute
+                        background: none
+                        border: none
+                        opacity: 0
+                        transition-property: opacity
+                        transition-duration: 1s
+                        transition-timing-function: ease
+                        &:hover
+                            opacity: 1
+                    .left_arrow
+                        background: url("../imgs/main_imgs/switch_skin_left.png") center center/contain no-repeat
+                        left: 3%
+                        
+                    .right_arrow
+                        background: url("../imgs/main_imgs/switch_skin_right.png") center center/contain no-repeat
+                        right: 3%
+                .main_preview_hero
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    &__skin
+                        position: absolute
+                        width: 50%
+                        height: 50%
+                        // background: url("../imgs/skins/ann inv.png") center center/cover no-repeat
+                        display: inline-block
+                        opacity: 0.4
+                        top: 5%
+                        z-index: -10
+                        opacity: 1
+                        &.left
+                            left: 0%
+                        &.right
+                            right: 0%
+                        &.hidden
+                            opacity: 0
+                .main_preview_platform
+                    position: absolute
+                    top: 90%
+                    width: 70%
+                    height: 25%
+                    left: 50%
+                    transform: translateX(-50%)
+                    z-index: -1
+                    img
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        bottom: 0%
+
+    &.main_buttons
+        max-height: 100px
+        margin-top: 6.3%
+        height: 88px
+        div
+            &.container
+                position: relative
+                width: 100%
+                height: 100%
+                button
+                    left: 50%
+                    transform: translateX(-50%)
+                    height: 100%
+                    position: absolute
+                    border: none
+                    transition-property: opacity
+                    transition-duration: 1s
+                    transition-timing-function: ease-out
+                    z-index: 100
+                    background: url("../imgs/main_imgs/down_arrow.png") center center/contain no-repeat
+                    &.hidden_menu
+                        position: absolute
+                        width: 75.9%
+                        display: block
+                        opacity: 0.4
+                        &:hover
+                            opacity: 1
+
+                    
+
+@media (max-width: 600px), (max-height: 925.8px)
+    section.top_preview
+        width: 540px
+        height: 208px
+    section.main_preview
+        width: 540px
+        height: 540px
+    section.main_buttons
+        width: 540px
+        height: 80px
+
+@media (max-width: 540px), (max-height: 836px)
+    section.top_preview
+        width: 480px
+        height: 185px
+    section.main_preview
+        width: 480px
+        height: 480px
+    section.main_buttons
+        width: 480px
+        height: 71px
+
+@media (max-width: 480px), (max-height: 743px)
+    section.top_preview
+        width: 420px
+        height: 162px
+    section.main_preview
+        width: 420px
+        height: 420px
+    section.main_buttons
+        width: 420px
+        height: 62px
+
+@media (max-width: 420px), (max-height: 650px)
+    section.top_preview
+        width: 360px
+        height: 138.5px
+    section.main_preview
+        width: 360px
+        height: 360px
+    section.main_buttons
+        width: 360px
+        height: 53px
+
+@media (max-width: 360px), (max-height: 557px)
+    section.top_preview
+        width: 300px
+        height: 116px
+        ////////////
+        .top_preview_container
+            img.slider_decorator
+            div
+                &.slider
+                    border-top: 1px solid var(--primary-color)
+                    border-bottom: 1px solid var(--primary-color)
+                    div
+                        &.hero
+                            width: 18%
+                            height: 100%
+                            border-right: 1px solid var(--primary-color)
+                            border-left: 1px solid var(--primary-color)
+                            
+
+    section.main_preview
+        width: 300px
+        height: 300px
+    section.main_buttons
+        width: 300px
+        height: 44px
+
+@media (max-width: 300px), (max-height: 464px)
+    section.top_preview
+        width: 240px
+        height: 92px
+    section.main_preview
+        width: 240px
+        height: 240px
+    section.main_buttons
+        width: 240px
+        height: 35.2px
+
+
+@media (max-width: 240px), (max-height: 371px)
+    section.top_preview
+        width: 180px
+        height: 69px
+    section.main_preview
+        width: 180px
+        height: 180px
+    section.main_buttons
+        width: 180px
+        height: 26.4px

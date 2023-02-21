@@ -1,0 +1,60 @@
+{
+    "heroes": [
+        {
+            "name": "ann",
+            "skins": [
+                "imgs/heroes/ann.png",
+                "imgs/skins/ann inv.png"
+            ]
+        },
+        {
+            "name": "fawn",
+            "skins": [
+                "imgs/heroes/fawn.png",
+                "imgs/skins/fawn inv.png"
+            ]
+        },
+        {
+            "name": "otto",
+            "skins": [
+                "imgs/heroes/otto.png",
+                "imgs/skins/otto inv.png"
+            ]
+        },
+        {
+            "name": "roky",
+            "skins": [
+                "imgs/heroes/roky.png",
+                "imgs/skins/roky inv.png"
+            ]
+        },
+        {
+            "name": "ruf",
+            "skins": [
+                "imgs/heroes/ruf.png",
+                "imgs/skins/ruf inv.png"
+            ]
+        },
+        {
+            "name": "zonk",
+            "skins": [
+                "imgs/heroes/zonk.png",
+                "imgs/skins/zonk inv.png"
+            ]
+        },
+        {
+            "name": "zorg",
+            "skins": [
+                "imgs/heroes/zorg.png",
+                "imgs/skins/zorg inv.png"
+            ]
+        },
+        {
+            "name": "zon2k",
+            "skins": [
+                "imgs/heroes/zonk.png",
+                "imgs/skins/zonk inv.png"
+            ]
+        }
+    ]
+}
